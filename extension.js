@@ -1,9 +1,9 @@
 // -*- mode: js; js-indent-level: 4; indent-tabs-mode: nil -*-
 
 try {
-  const SearchController = imports.ui.searchController;
+    const SearchController = imports.ui.searchController;
 } catch (err) {
-  log("SearchController doesn't exist");
+    log("SearchController doesn't exist");
 }
 
 const ExtensionUtils = imports.misc.extensionUtils;
@@ -15,13 +15,13 @@ const Docking = Me.imports.docking;
 var dockManager;
 
 function init() {
-  ExtensionUtils.initTranslations("dashtodock");
+    ExtensionUtils.initTranslations("dashtodock");
 }
 
 function enable() {
-  new Docking.DockManager();
+    new Docking.DockManager();
 }
 
 function disable() {
-  dockManager.destroy();
+    dockManager.destroy();
 }
